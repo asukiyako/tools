@@ -1,0 +1,20 @@
+Other Interesting Stuff:
+https://www.hackthebox.com
+https://www.youtube.com/@ippsec/playlists
+https://pentesterlab.com
+https://portswigger.net/web-security
+https://github.com/sbilly/awesome-security
+https://github.com/fabionoth/awesome-cyber-security
+https://github.com/infoslack/awesome-web-hacking
+https://github.com/HackTricks-wiki/hacktricks/blob/master/src/SUMMARY.md
+https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet
+https://github.com/quetzal-coalt/awesome-rf
+https://github.com/kayranfatih/awesome-iot-and-hardware-security
+https://academy.tcm-sec.com/p/beginner-s-guide-to-iot-and-hardware-hacking
+https://github.com/m0nad/awesome-privilege-escalation
+https://github.com/devanshbatham/Awesome-Bugbounty-Writeups
+https://github.com/ITI/ICS-Security-Tools
+https://github.com/garudaproject/digital-forensics-tools
+https://github.com/jiep/offensive-ai-compilation
+https://github.com/0xMrNiko/Awesome-Red-Teaming
+https://pauljerimy.com/security-certification-roadmap
