@@ -18,7 +18,7 @@ https://github.com/garudaproject/digital-forensics-tools
 https://github.com/jiep/offensive-ai-compilation
 https://github.com/0xMrNiko/Awesome-Red-Teaming
 https://pauljerimy.com/security-certification-roadmap
-
+https://www.getcreditcardnumbers.com/
 
 🔴 RECONNAISSANCE:
 - RustScan ==> https://lnkd.in/ebvRfBNy
