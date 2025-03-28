@@ -19,6 +19,8 @@ https://github.com/jiep/offensive-ai-compilation
 https://github.com/0xMrNiko/Awesome-Red-Teaming
 https://pauljerimy.com/security-certification-roadmap
 https://www.getcreditcardnumbers.com/
+https://0xpatrik.com/
+https://www.splunk.com/en_us/blog/learn/cybersecurity-podcasts.html
 
 🔴 RECONNAISSANCE:
 - RustScan ==> https://lnkd.in/ebvRfBNy
