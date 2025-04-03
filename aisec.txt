@@ -1,0 +1,51 @@
+General Learning Resources
+ 
+3Blue1Brown’s Neural Network Playlist -  https://www.youtube.com/watch?v=wjZofJX0v4M&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=5
+The entire playlist is incredible. However, videos 5 and 6 will be the most directly applicable to testing. Note: Understanding the matrix multiplication / math involved is not a requirement.
+ 
+General Prompt Engineering (Free / Paid Resources) - https://learnprompting.org/docs/introduction
+ 
+Anthropic Prompt Engineering Guide - https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
+ 
+Pliny Jailbreak Templates (NSFW) - https://github.com/elder-plinius/L1B3RT4S
+ 
+Tokenizer Visualizer - https://huggingface.co/spaces/Xenova/the-tokenizer-playground
+ 
+SecOps Group Certified AI/ML Pentester (C-AI/MLPen)
+- https://secops.group/product/certified-ai-ml-pentester/ - There is a Black Friday coupon (BLACKFRIDAY-90) for 90% off! I had the opportunity to take that exam in September and, transparently, I’m a bit unsure of how I felt about the exam. Initially, I did enjoy the exam, but I felt a bit disappointed regarding the difficulty of the challenges themselves coupled with the 60% pass requirement. However, for the 90% discount, I think there’s still some value, especially with it being capped at 4 hours!
+ 
+Microsoft's AI Red Team Guidelines and Resources - https://learn.microsoft.com/en-us/security/ai-red-team/
+ 
+Microsoft AI Red Teaming in Practice Training ($4k at BlackHat but hopefully offered for cheaper eventually! This course was fun!) - https://www.blackhat.com/us-24/training/schedule/#ai-red-teaming-in-practice-37464
+ 
+NVIDIA's Course on Adversarial Machine Learning (Offered at BlackHat but Self-Paced Online for $90! Covers traditional ML attacks like Model Evasion, Extraction, Inversion, Poisoning, but also LLM attacks!) - https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-DS-03+V1
+ 
+CTFs, Challenges, and Hands-On:
+ 
+CTF Around AI Security (Includes LLMs and Data Analysis) -
+https://crucible.dreadnode.io/ - Crucible has some data analysis type challenges that aren't super applicable, but the other challenges are* still solid! They even have a super basic model theft one. The DEFCON31 CTF challenges may still be live here.
+ 
+Multi-chain Prompt CTF - https://myllmdoc.com - Had a friend send this one to me and it was fun! only gripe is it's limited to 50 prompts every 12 hours
+ 
+Web Security Academy - Web LLM Attacks - Nice intro into web specific attacks - https://portswigger.net/web-security/llm-attacks
+ 
+Gandalf by Lakera - Test your Prompt Injection skills to get the password! Levels 1-8 (Gandalf the White) - https://gandalf.lakera.ai/intro
+ 
+Gandalf Summarization and Topics - https://gandalf.lakera.ai/trial-summarization-novice and  https://gandalf.lakera.ai/trial-topic-novice - I am quite impressed at Lakera’s inclusion of some of the newer Gandalf challenges, such as “Summarization” and “Topics.” Several targets we’ve encountered in “the wild” have specific tasks enforced both via metaprompt and multi-chain prompt enforcement, so these new labs mimicked a pretty realistic scenario!
+ 
+ImmersiveLabs Prompting Labs - https://prompting.ai.immersivelabs.com/ - Similar to Gandalf!
+ 
+Jailbreak Arena - https://app.grayswan.ai/arena - CTF to jailbreak multiple models
+ 
+HackAPrompt 2.0 - https://www.hackaprompt.com/ - $500k in prizes
+ 
+Research Aggregation
+ 
+DreadNode's Paper Stack on Adversarial and Defensive AI Research - https://dreadnode.notion.site/2582fe5306274c60b85a5e37cf99da7e?v=74ab79ed1452441dab8a1fa02099fedb - Note: This aggregates from arxiv, which anyone can publish to so your mileage may vary
+ 
+Automated tooling:
+PromptFoo - https://github.com/promptfoo/promptfoo
+garak - https://github.com/leondz/garak
+giskard - https://github.com/Giskard-AI/giskard
+Microsoft's PyRIT - https://github.com/Azure/PyRIT
+Microsoft's Recommended Adversarial Model for PyRIT - https://huggingface.co/docs/transformers/en/model_doc/mixtral
