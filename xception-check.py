@@ -51,7 +51,7 @@ y = np.concatenate((malware_labels, benign_labels), axis=0)
 X = preprocess_input(X)
 
 # 6. Load model and evaluate
-model = load_model("drive/MyDrive/model_1_86.h5")
+model = load_model("/ml/smart/xception/model_1_86.h5")
 loss, accuracy = model.evaluate(X, y, batch_size=8)
 print(f"PE File Dataset Accuracy: {accuracy * 100:.2f}%")
 
