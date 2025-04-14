@@ -49,3 +49,6 @@ garak - https://github.com/leondz/garak
 giskard - https://github.com/Giskard-AI/giskard
 Microsoft's PyRIT - https://github.com/Azure/PyRIT
 Microsoft's Recommended Adversarial Model for PyRIT - https://huggingface.co/docs/transformers/en/model_doc/mixtral
+
+
+  https://geicoteams.webex.com/geicoteams/j.php?MTID=m6a7bdd281a9b2fb06762b13fa37f1144
