@@ -1,1 +1,4 @@
 TLS-PASS-THROUGH: https://github.com/InfoSecWarrior/Offensive-Pentesting-Resources/blob/main/TLS-Pass-Through-List.txt
+
+
+File extensions to hide in Burp to make life easier: js,gif,jpg,png,css,ping,svg,otf,woff
