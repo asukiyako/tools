@@ -1,0 +1,57 @@
+import pefile
+import os
+import numpy as np
+import pandas as pd
+from math import log
+import seaborn as sns
+import matplotlib.pyplot as plt
+from PIL import Image
+from keras.applications import Xception
+from keras.applications.xception import preprocess_input
+from keras.optimizers import Adamax
+from keras.losses import BinaryCrossentropy
+from keras.callbacks import EarlyStopping
+from keras.layers import Input, Flatten, Dense
+from keras.models import Model
+
+# PE File Processing Functions
+def extract_pe_features(filepath, num_bytes=1024):
+    try:
+        with open(filepath, 'rb') as f:
+            first_bytes = f.read(num_bytes)
+        return [b for b in first_bytes] + [0] * (num_bytes - len(first_bytes))
+    except:
+        return None
+
+def process_pe_folder(folder_path, label):
+    features = []
+    for filename in os.listdir(folder_path):
+        if filename.lower().endswith(('.exe', '.dll', '.sys')):
+            filepath = os.path.join(folder_path, filename)
+            byte_features = extract_pe_features(filepath)
+            if byte_features:
+                features.append(byte_features + [label])
+    return pd.DataFrame(features)
+
+# Prepare Dataset
+malware_df = process_pe_folder("/path/to/malware", 1)
+benign_df = process_pe_folder("/path/to/benign", 0)
+dataset = pd.concat([malware_df, benign_df], ignore_index=True)
+dataset.columns = [f"byte_{i}" for i in range(1024)] + ["Class"]
+
+# Visualization and Matrix Conversion (unchanged)
+def malware_to_matrix(bytes):
+    matrix = np.zeros((256, 256), dtype=np.int64)
+    for k, entry in enumerate(bytes[:8192]):  # Use first 8192 bytes (256x256/8)
+        for j in range(8):
+            for i in range(8):
+                matrix[j + int(k/32)*8][i + (k%32)*8] = entry
+    return matrix / 255
+
+# Rest of your original pipeline...
+shuffled_dataset = dataset.sample(frac=1).reset_index(drop=True)
+train_portion = int(len(shuffled_dataset) * 0.8)
+train_dataset = shuffled_dataset.iloc[:train_portion]
+test_dataset = shuffled_dataset.iloc[train_portion:]
+
+# Continue with image generation, model training etc...
